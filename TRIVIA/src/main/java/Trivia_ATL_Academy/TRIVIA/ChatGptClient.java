@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ChatGptClient {
-
+/*
     public String enviarPreguntas(String question) {
         String respuestaDeChatgpt = "";
 
@@ -47,4 +47,5 @@ public class ChatGptClient {
             }
         }
     }
+    */
 }

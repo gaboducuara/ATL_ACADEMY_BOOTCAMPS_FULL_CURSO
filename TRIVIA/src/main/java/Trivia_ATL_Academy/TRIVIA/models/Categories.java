@@ -1,22 +1,17 @@
 package Trivia_ATL_Academy.TRIVIA.models;
 
+import jakarta.persistence.*;
+import lombok.Data;
+@Entity
+@Table(name = "category")
+@Data
 public class Categories {
-    private String category;
+    @Id  // -> la anotacion ID hace referencia a la primary key de nuestra tabla
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "description")
     private String description;
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }
